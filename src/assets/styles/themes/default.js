@@ -1,3 +1,3 @@
 export default {
-  backgroundColor: '#f6f5c',
+  backgroundColor: '#E5E5E5',
 };
