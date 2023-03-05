@@ -1,8 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
-import Input from '../../components/input';
-import Select from '../../components/Select';
-import Button from '../../components/button';
+import ContactForm from '../../components/ContactForm';
 
 export default function NewContact() {
   return (
@@ -10,19 +9,7 @@ export default function NewContact() {
       <PageHeader
         title="Novo Contato"
       />
-      <Input
-        type="text"
-        placeholder="Nome"
-      />
-      <Select>
-        <option value="0">Instagram</option>
-        <option value="1">Facebook</option>
-        <option value="2">Twitter</option>
-      </Select>
-      <Button>
-        Salvar
-      </Button>
-
+      <ContactForm />
     </>
   );
 }
