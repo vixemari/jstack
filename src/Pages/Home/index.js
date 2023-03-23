@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Container, InputSearchContainer, Header, ListContainer, Card,
 } from './styles';
@@ -15,7 +16,7 @@ export default function ContactsList() {
 
       <Header>
         <strong>3 Contatos</strong>
-        <a href="/">Novo Contato</a>
+        <Link to="/new">Novo Contato</Link>
       </Header>
 
       <ListContainer>
@@ -37,30 +38,12 @@ export default function ContactsList() {
           <span>(79)99999-9999</span>
         </div>
         <div className="actions">
-          <a href="/">
+          <Link to="/edit/123">
             <img src={edit} alt="Edit" />
-            <button type="button">
-              <img src={trash} alt="Delete" />
-            </button>
-          </a>
-        </div>
-      </Card>
-      <Card>
-        <div className="info">
-          <div className="contact-name">
-            <strong>Matheus Silva</strong>
-            <small>instagram</small>
-          </div>
-          <span>mariana@test.com</span>
-          <span>(79)99999-9999</span>
-        </div>
-        <div className="actions">
-          <a href="/">
-            <img src={edit} alt="Edit" />
-            <button type="button">
-              <img src={trash} alt="Delete" />
-            </button>
-          </a>
+          </Link>
+          <Link to="/delete/123">
+            <img src={trash} alt="Delete" />
+          </Link>
         </div>
       </Card>
     </Container>
